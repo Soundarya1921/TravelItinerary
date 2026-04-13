@@ -1,0 +1,582 @@
+/*home page*/
+
+.home-container {
+  height: 100vh;
+  background-color: rgb(0, 0, 0);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.overlay {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+.logo {
+  width: 200px;
+  opacity: 0;
+  animation: blink 1.5s  ;
+
+}
+
+.title{
+  color: gold;
+  font-size: 24px;
+  margin-top: 10px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman';
+  opacity: 0;
+
+}
+
+.helpbutton {
+  padding: 10px 25px;
+  font-size: 16px;
+  border-radius: 20px;
+  border: none;
+  background-color: white;
+  color: black;
+  cursor: pointer;
+}
+
+.helpbutton:active {
+  transform: scale(0.95);
+}
+
+
+/* Navbar */
+
+.navbarwrapper{
+    width: 100%;
+    height: auto;
+    background-color: #2b2929;
+    box-shadow: 0px 0px 3px 3px #f1f1f1;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+   
+}
+.navmenu{
+    display: flex;
+    gap: 10px;
+}
+
+.navlinks{
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+    margin-right: 50px;
+    font-weight: 600;
+    text-decoration: none;
+    gap: 10px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+}
+.navlinks{
+    text-decoration: solid;
+}
+.active{
+    color: rgb(98, 153, 199);
+}
+
+
+
+
+/** Login component */
+
+.login{
+    font-family:'Times New Roman', Times, serif;
+    color: #f1f1f1;
+    font-size: 16px;
+    transition: transform ;
+    cursor: pointer;
+}
+.login:hover{
+    transform: scale(1.1);
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f2f2f2;
+}
+
+
+.form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  
+}
+
+
+.form-card {
+  background: white;
+  padding: 25px;
+  width: 380px;
+  margin-top: 20px;
+  border-radius: 12px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+
+.form-title {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+
+.toggle {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.toggle button {
+  padding: 8px 15px;
+  border: none;
+  background: #eee;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.toggle .active {
+  background: #0e0d0d;  
+  color: white;
+}
+
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.form input,.form textarea,.submit {
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  width: 100%;
+}
+
+
+.row {
+  display: flex;
+  gap: 10px;
+}
+
+.row input,
+.row .phone {
+  flex: 1;
+}
+
+.phone {
+  display: flex;
+  gap: 5px;
+ 
+}
+
+.phone select {
+  width: 30%;
+}
+
+.phone input {
+  width: 70%;
+}
+
+
+.submit {
+  background: #080808;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.submit:hover {
+  transform: scale(1.05);
+}
+
+.helpbutton{
+  display: flex;
+  margin: 20px auto 0 auto ;
+  justify-content: center;
+  cursor: pointer;
+ 
+
+}
+.helpbutton {
+  cursor: pointer;
+  border: none;
+  padding: 0.9rem 2rem;
+  font: 700 17px inherit;
+  border-radius: 999px;
+  position: relative;
+  overflow: hidden;
+  background: #141313;
+  color: #eae2e2;
+}
+
+.helpbutton span {
+  position: relative;
+  z-index: 1;
+  transition: 0.3s;
+}
+
+.helpbutton:hover span {
+  color: #0c0c0c;
+}
+
+.helpbutton::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  width: 120%;
+  left: -10%;
+  background: rgb(123, 123, 123);
+  transform: skew(30deg);
+  transition: 0.6s;
+}
+
+.helpbutton:hover::before {
+  transform: translateX(100%);
+}
+
+
+
+/* Flight component */
+
+.flightwrapper{
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  margin-top: 120px;
+}
+
+.topclassflights{
+  text-align: center;
+  font-size: 40px;
+  font-weight: bold;
+  color: #100e0e;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.cardstitle{
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+  color: #100e0e;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  margin-bottom: 20px;
+}
+
+.flightboxwrapper{
+  display: flex;
+  justify-content:center;
+  gap: 8px;
+  margin-top: 30px;
+}
+.cards{
+  width: 90px;
+  height: 100px;
+  text-align: center;
+  background-color: #f7f7f8;
+  padding-bottom: 10px;
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  transition: transform 0.3s, background-color 0.3s;
+  padding: 20px;
+  border-radius: 5p;
+  padding-top: 10px;
+  cursor: pointer;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+.card{
+  width: 90px;
+  height: 100px;
+  text-align: center;
+  background-color: #f7f7f8;
+  padding-bottom: 10px;
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  transition: transform 0.3s, background-color 0.3s;
+  padding: 20px;
+  border-radius: 5px;
+  padding-top: 10px;
+  cursor: pointer;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  
+}
+.cards:hover{
+  transform: translateY(-15px);
+  background-color: #d5d1d1;
+}
+
+.cardimage{
+  width: 80px;
+  height: 80px;
+  margin-bottom: 10px;
+}
+.cardstitle{
+  font-size: 15px;
+  font-weight: bold;
+  
+}
+
+/*Train/bus booking*/
+
+.container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items:flex-start;
+  padding-top: 120px;
+  background: #fafcfc;
+}
+
+.card{
+  background: #6e6c6c;
+  padding: 30px;
+  border-radius: 12px;
+  width: 350px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  margin-top: -50px;
+}
+
+.heading {
+  text-align: center;
+  display: flex;
+  align-items: space-evenly;
+  margin-bottom: 18px;
+}
+
+.row {
+  display: flex;
+  gap: 50px;
+  margin-bottom: 15px;
+}
+
+.input {
+  width: 100%;
+  padding: 10px;
+  display: flex;
+  align-items: space-evenly;
+  border-radius: 6px;
+  border: 1px solid #000000;
+}
+
+.inputs {
+  width: 100%;
+  padding: 10px;
+  display: flex;
+  align-items: space-evenly;
+  border-radius: 6px;
+  margin-top: 10px;
+  border: 1px solid #000000;
+}
+
+.addBtn {
+  padding: 10px 15px;
+  border: none;
+  padding-top: 10px;
+  border-radius: 15px;
+  background: #aaaab9;
+  color: white;
+  margin-top: 10px;
+  transition: transform 0.2s;
+  cursor: pointer;
+}
+.addBtn:hover {
+  background: #070707;
+  transform: scale(1.05);
+}
+
+.submitBtn {
+  width: 100%;
+  padding: 12px;
+  margin-top: 15px;
+  border: none;
+  border-radius: 6px;
+  background: #020202;
+  color: white;
+  font-weight: bold;
+  transition: transform 0.2s;
+  cursor: pointer;
+}
+
+.submitBtn:hover {
+  background: #000000;
+  transform: scale(1.02);
+}
+
+.tag {
+  display: inline-block;
+  background: #e9f3ff;
+  padding: 6px 12px;
+  margin: 5px;
+  border-radius: 15px;
+}
+
+.removeBtn {
+  margin-left: 6px;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  color: rgb(12, 12, 12);
+}
+
+/*Hotel booking*/
+
+.container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items:flex-start;
+  padding-top: 120px;
+  background: #ffffff;
+}
+
+
+.card {
+  background: rgba(132, 132, 132, 0.95);
+  padding: 30px;
+  border-radius: 15px;
+  width: 360px;
+  gap: 10px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+}
+
+
+.heading {
+  text-align: center;
+  margin-bottom: 20px;
+  gap: 10px;
+}
+
+
+.input {
+  width: 100%;
+  padding: 12px;
+  gap: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  margin-bottom: 10px;
+}
+
+
+.row {
+  display: flex;
+  gap: 50px;
+  margin-bottom: 15px;
+}
+
+
+.submitBtn {
+  width: 100%;
+  padding: 12px;
+  margin-top: 15px;
+  border: none;
+  border-radius: 6px;
+  background: #020202;
+  color: white;
+  font-weight: bold;
+  transition: transform 0.2s;
+  cursor: pointer;
+}
+
+.submitBtn:hover {
+  transform: scale(1.05);
+}
+
+/* Rental cars */
+
+.city-wrapper {
+  position: relative;
+  gap: 10px;
+}
+
+.license-input{
+  margin-top: 10px;
+  row-gap: 10px;
+}
+
+.dropdown {
+  position: absolute;
+  width: 100%;
+  background: white;
+  border-radius: 8px;
+  margin-top: 5px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+  max-height: 150px;
+  overflow-y: auto;
+}
+
+.dropdown-item {
+  padding: 25px;
+  cursor: pointer;
+}
+
+.dropdown-item:hover {
+  background: #f0f0f0;
+}
+
+
+.popular {
+  margin: 15px 0;
+}
+
+.popular {
+  display: flex;
+  font-size: bold;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.popular span {
+  padding: 8px 14px;
+  background: #e9f3ff;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.inp{
+    width:22vh;
+    padding: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    border-radius: 6px;
+    margin-top: 10px;
+    
+}
+.popular span:hover {
+  background: #000000;
+  color: white;
+}
+
+.warning {
+  font-size: 13px;
+  color: rgb(9, 9, 9);
+  text-align: center;
+}
+
+.cardss{
+  background: rgba(250, 245, 245, 0.95);
+  padding: 30px;
+  border-radius: 15px;
+  width: 300px;
+  gap: 10px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+  transition: transform;
+  cursor: pointer;
+}
+
+.cardss:hover{
+  transform: scale(1.1);
+}
